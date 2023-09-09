@@ -1,0 +1,41 @@
+.Container {
+  @apply mb-4 pb-4 border-b border-b-gray-30;
+}
+
+.Date {
+  @apply text-xs tracking-tight;
+  @apply text-gray-70 !important;
+}
+
+.Title {
+  @apply my-2 font-bold text-lg;
+  @apply text-gray-90 !important;
+}
+
+/* Styles for news entries with images */
+.flexContainer {
+  @apply flex flex-col md:flex-row md:items-center gap-4;
+}
+
+.flexContainer section,
+.TextContainer {
+  @apply flex-1;
+}
+
+.Container section img {
+  @apply w-full h-48 md:h-40 xl:h-52 2xl:h-60 object-cover;
+}
+
+:global(.dark) .Title,
+:global(.dark) .Text {
+  @apply text-white !important;
+}
+
+.Text {
+  @apply text-sm tracking-tight leading-normal;
+  @apply text-gray-90 !important;
+}
+
+:global(.dark) .Container {
+  @apply border-b-gray-90;
+}

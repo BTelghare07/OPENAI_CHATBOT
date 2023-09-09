@@ -1,0 +1,82 @@
+.Container {
+  @apply col-span-full lg:col-start-2 lg:col-end-5;
+}
+
+.InnerContainer {
+  @apply flex flex-col items-center justify-between py-8;
+}
+
+.Separator {
+  @apply w-full border-t-gray-30;
+}
+
+:global(.dark) .Separator {
+  @apply border-t-gray-90 !important;
+}
+
+.Navigation {
+  @apply flex gap-8 mt-4 mb-2;
+}
+
+.Link {
+  @apply text-gray-90 text-base tracking-tight leading-7 font-bold hover:opacity-70;
+}
+
+:global(.dark) .Link {
+  @apply text-white !important;
+}
+
+.SocialNetworks {
+  @apply flex flex-wrap justify-center items-center gap-4;
+}
+
+.IconLink {
+  @apply relative rounded-full overflow-hidden flex justify-center items-center px-2 sm:p-2 hover:opacity-100 hover:scale-105 hover:bg-gray-10;
+}
+
+.IconContainer {
+  @apply text-base;
+}
+
+.Icon {
+  @apply w-6 h-6 flex fill-gray-60;
+}
+
+/* Colors for hover states */
+.IconLink:hover .GitHubIcon {
+  @apply fill-brand-GitHub;
+}
+
+.IconLink:hover .RedditIcon {
+  @apply fill-brand-Reddit;
+}
+
+.IconLink:hover .DiscordIcon {
+  @apply fill-brand-Discord;
+}
+
+.IconLink:hover .YouTubeIcon {
+  @apply fill-brand-YouTube;
+}
+
+.IconLink:hover .TwitterIcon {
+  @apply fill-brand-Twitter;
+}
+
+.IconLink:hover .LinkedInIcon {
+  @apply fill-brand-LinkedIn;
+}
+
+.IconLink:hover .InstagramIcon,
+.IconLink:hover .MediumIcon {
+  @apply fill-brand-mono;
+}
+
+.IconLink:hover .NewsletterIcon path {
+  @apply stroke-red-70;
+}
+
+.Copyright {
+  @apply text-base tracking-tight leading-7 mt-2;
+  @apply text-gray-60 !important;
+}

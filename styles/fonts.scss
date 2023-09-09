@@ -1,0 +1,8 @@
+.material-icons,
+i {
+  @apply font-normal text-2xl not-italic leading-none tracking-normal no-underline inline-block whitespace-nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
